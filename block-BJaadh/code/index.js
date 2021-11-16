@@ -9,7 +9,6 @@ While using methods like push, pop, sort etc it mutates the original array.
 Clone the array before using sort method: [...arr]
 
 */
-let numbersClone = [...numbers];
 
 // - Find the index of `101` in numbers
 
@@ -46,10 +45,14 @@ while (idx != -1) {
 }
 console.log(findIs);
 
+let allIsAgain = strings.filter((string) => string.indexOf("is") !== -1);
+
 // - Check if all the numbers in numbers array are divisible by three use array method (every)
 
 let isDivisibleBy3 = (numbers) => numbers % 3 === 0;
 console.log(numbers.every(isDivisibleBy3));
+
+numbers.every((num) => num % 3 == 0);
 
 // -  Sort Array from smallest to largest
 
