@@ -1,4 +1,4 @@
-For the given code below you have to draw the diagram of how these things are working. Make it similar to the how it was done in previous (Visualise Array Methods) exercise.
+For the given code below you have to draw the diagram of how the code works. Make it similar to the video you watched in block 1 (Visualise Array Methods).
 
 - Keep the images in the `img` folder
 - using the `![](./img/imagename.png)` add images below each code snippet
@@ -10,8 +10,8 @@ function double(num) {
 }
 let doubleNum = numbers.forEach(double);
 ```
-![](./img/main.png)
 
+![](./img/exercise1.png)
 
 ```js
 let numbers = [100, 200, 33, 45, 65, 76, 51];
@@ -21,6 +21,8 @@ function double(num) {
 let doubleNum = numbers.forEach(double);
 ```
 
+![](./img/exercise2.png)
+
 ```js
 let numbers = [100, 200, 33, 45, 65, 76, 51];
 function double(num) {
@@ -28,6 +30,8 @@ function double(num) {
 }
 let doubleNum = numbers.forEach(double);
 ```
+
+![](./img/exercise3.png)
 
 ```js
 let numbers = [100, 200, 33, 45, 65, 76, 51];
@@ -37,6 +41,8 @@ function double(num) {
 let doubleNumbers = numbers.map(double);
 ```
 
+![](./img/exercise4.png)
+
 ```js
 let numbers = [100, 200, 33, 45, 65, 76, 51];
 function addTwo(num) {
@@ -45,6 +51,8 @@ function addTwo(num) {
 let doubleNumbers = numbers.map(addTwo);
 ```
 
+![](./img/exercise5.png)
+
 ```js
 let numbers = [100, 200, 33, 45, 65, 76, 51];
 function addTwo(num) {
@@ -52,6 +60,8 @@ function addTwo(num) {
 }
 let doubleNumbers = numbers.map(addTwo);
 ```
+
+![](./img/exercise6.png)
 
 ```js
 let numbers = [100, 200, 33, 45, 65, 76, 51];
@@ -61,6 +71,8 @@ function addTwo(num) {
 let doubleNumbers = numbers.map(addTwo);
 ```
 
+![](./img/exercise7.png)
+
 ```js
 let numbers = [100, 200, 33, 45, 65, 76, 51];
 function isOdd(num) {
@@ -68,6 +80,8 @@ function isOdd(num) {
 }
 let oddNumbers = numbers.filter(isOdd);
 ```
+
+![](./img/exercise8.png)
 
 ```js
 let numbers = [100, 200, 33, 45, 65, 76, 51];
@@ -77,6 +91,8 @@ function test(num) {
 let filteredNumbers = numbers.filter(test);
 ```
 
+![](./img/exercise9.png)
+
 ```js
 let numbers = [100, 200, 33, 45, 65, 76, 51];
 function test(num) {
@@ -85,6 +101,8 @@ function test(num) {
 let filteredNumbers = numbers.filter(test);
 ```
 
+![](./img/exercise10.png)
+
 ```js
 let numbers = [100, 200, 33, 45, 65, 76, 51];
 function add(accumulator, currentValue) {
@@ -92,6 +110,8 @@ function add(accumulator, currentValue) {
 }
 let sum = numbers.reduce(add);
 ```
+
+![](./img/exercise11.png)
 
 ```js
 let numbers = [100, 200, 33, 45, 65, 76, 51];
