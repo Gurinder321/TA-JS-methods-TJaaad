@@ -1,46 +1,96 @@
 let persons = [
-  { name: 'John', grade: 8, sex: 'M' },
-  { name: 'Sarah', grade: 12, sex: 'F' },
-  { name: 'Bob', grade: 16, sex: 'M' },
-  { name: 'Johnny', grade: 2, sex: 'M' },
-  { name: 'Ethan', grade: 4, sex: 'M' },
-  { name: 'Paula', grade: 18, sex: 'F' },
-  { name: 'Donald', grade: 5, sex: 'M' },
-  { name: 'Jennifer', grade: 13, sex: 'F' },
-  { name: 'Courtney', grade: 15, sex: 'F' },
-  { name: 'Jane', grade: 9, sex: 'F' },
-  { name: 'John', grade: 17, sex: 'M' },
-  { name: 'Arya', grade: 14, sex: 'F' },
+  { name: "John", grade: 8, sex: "M" },
+  { name: "Sarah", grade: 12, sex: "F" },
+  { name: "Bob", grade: 16, sex: "M" },
+  { name: "Johnny", grade: 2, sex: "M" },
+  { name: "Ethan", grade: 4, sex: "M" },
+  { name: "Paula", grade: 18, sex: "F" },
+  { name: "Donald", grade: 5, sex: "M" },
+  { name: "Jennifer", grade: 13, sex: "F" },
+  { name: "Courtney", grade: 15, sex: "F" },
+  { name: "Jane", grade: 9, sex: "F" },
+  { name: "John", grade: 17, sex: "M" },
+  { name: "Arya", grade: 14, sex: "F" },
 ];
 
 // NOTE: Use reduce method whereever you can to solve this exercise:
 
 // Find the average grade
 
-// Find the average grade of male
+let personsGrade = persons.map((person) => person.grade);
 
+console.log(personsGrade);
+let averageGrade =
+  personsGrade.reduce((acc, cv) => {
+    return acc + cv;
+  }, 0) / personsGrade.length;
+console.log(averageGrade);
+
+// Find the average grade of male
+let maleGrade = persons.filter((person) => person.sex === "M");
+
+console.log(maleGrade);
+let averageMaleGrade =
+  maleGrade.reduce((acc, cv) => {
+    return acc + cv.grade;
+  }, 0) / maleGrade.length;
+
+console.log(averageMaleGrade);
 // Find the average grade of female
+let femaleGrade = persons.filter((person) => person.sex === "F");
+
+let averageFemaleGrade =
+  femaleGrade.reduce((acc, cv) => {
+    return acc + cv.grade;
+  }, 0) / femaleGrade.length;
+
+console.log(averageFemaleGrade);
 
 // Find the highest grade
+console.log(
+  personsGrade
+    .sort(function (a, b) {
+      return a - b;
+    })
+    .pop()
+);
 
 // Find the highest grade in male
-
+let highestMaleGrade = maleGrade.map((person) => person.grade).pop();
+console.log(highestMaleGrade);
 // Find the highest grade in female
+let highestFemaleGrade = femaleGrade.map((person) => person.grade).pop();
+console.log(highestFemaleGrade);
 
 // Find the highest grade for people whose name starts with 'J' or 'P'
+let nameWithJorP = persons.filter(
+  (person) => person.name.startsWith("J") || person.name.startsWith("P")
+);
+
+let gradeWithJorP = nameWithJorP.map((person) => person.grade);
+console.log(gradeWithJorP);
+
+let highestGradeJorP = gradeWithJorP.sort();
+console.log(
+  highestGradeJorP
+    .sort(function (a, b) {
+      return a - b;
+    })
+    .pop()
+);
 
 const fruitBasket = [
-  'banana',
-  'cherry',
-  'orange',
-  'apple',
-  'cherry',
-  'orange',
-  'apple',
-  'banana',
-  'cherry',
-  'orange',
-  'fig',
+  "banana",
+  "cherry",
+  "orange",
+  "apple",
+  "cherry",
+  "orange",
+  "apple",
+  "banana",
+  "cherry",
+  "orange",
+  "fig",
 ];
 
 /* 
@@ -70,6 +120,7 @@ const data = [
 ];
 
 // Using reduce flat data array
+console.log(data.flat());
 
 const dataTwo = [
   [1, 2, 3],
@@ -79,6 +130,7 @@ const dataTwo = [
 ];
 
 // Using reduce flat dataTwo array
+console.log(dataTwo.flat(2));
 
 /*
 
@@ -89,15 +141,39 @@ Create these functions which accepts a number value and returns a number value:
   - `triple` triples the input 
   - `half` converts the value to half and return the integer value not decimal (use Math.round(21.5) => 21)
 */
+function increment(array) {
+  for (let i = 0; i < array.length; i++) {
+    return array[i];
+  }
+}
+
+function doublesNum(num) {
+  return num * 2;
+}
+
+function decrement(array) {
+  for (let i = 0; i < array.length; i--) {
+    return array[i];
+  }
+}
+
+function triplesNum(num) {
+  return num * 3;
+}
+
+function halfNum(num) {
+  let answer = num / 2;
+  return Math.round(answer);
+}
 
 let pipeline = [
   increment,
-  double,
+  doublesNum,
   decrement,
   decrement,
-  double,
-  triple,
-  half,
+  doublesNum,
+  triplesNum,
+  halfNum,
   increment,
 ];
 
@@ -115,18 +191,18 @@ EXAMPLE:
   ...
 */
 
-let pipeline2 = [
-  increment,
-  half,
-  double,
-  decrement,
-  decrement,
-  triple,
-  double,
-  triple,
-  half,
-  increment,
-  triple,
-];
+// let pipeline2 = [
+//   increment,
+//   half,
+//   double,
+//   decrement,
+//   decrement,
+//   triple,
+//   double,
+//   triple,
+//   half,
+//   increment,
+//   triple,
+// ];
 
 // Find the output using pipeline2 the initial value if 8
