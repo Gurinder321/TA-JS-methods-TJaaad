@@ -13,7 +13,7 @@ let persons = [
   { name: "Arya", grade: 14, sex: "F" },
 ];
 
-// NOTE: Use reduce method whereever you can to solve this exercise:
+// NOTE: Use reduce method wherever you can to solve this exercise:
 
 // Find the average grade
 
@@ -62,6 +62,14 @@ console.log(highestMaleGrade);
 let highestFemaleGrade = femaleGrade.map((person) => person.grade).pop();
 console.log(highestFemaleGrade);
 
+let highestFemale = persons
+  .filter((person) => person.sex === "F")
+  .map((person) => person.grade)
+  .sort((a, b) => a - b)
+  .pop();
+
+console.log(highestFemale);
+
 // Find the highest grade for people whose name starts with 'J' or 'P'
 let nameWithJorP = persons.filter(
   (person) => person.name.startsWith("J") || person.name.startsWith("P")
@@ -102,15 +110,31 @@ Output:
 {banana: 2, cherry: 3, orange: 3, apple: 2, fig: 1}
 */
 
-/* 
+let fruitObj = fruitBasket.reduce((acc, cv) => {
+  if (acc[cv]) {
+    acc[cv] = acc[cv] + 1;
+  } else {
+    acc[cv] = 1;
+  }
+  return acc;
+}, {});
 
+console.log(fruitObj);
+/* 
+ 
 Use the fruitBasket array to create an array of array. Each array will contain two values name of fruit and number of times
 that fruit appeared. Use the variable defined above (fruitsObj). To get all the keys of an array you can use Object.keys()
 
 Output: 
 
+
 [['banana', 2], ['cherry', 3], ['orange', 3], ['apple', 2], ['fig', 1]]
 */
+
+let fruitsArray = Object.keys(fruitObj).reduce((acc, cv) => {
+  acc = acc.concat([[cv, fruitObj[cv]]]);
+  return acc;
+}, []);
 
 const data = [
   [1, 2, 3],
@@ -120,7 +144,10 @@ const data = [
 ];
 
 // Using reduce flat data array
-console.log(data.flat());
+data.reduce((acc, cv) => {
+  acc = acc.concat(cv);
+  return acc;
+}, []);
 
 const dataTwo = [
   [1, 2, 3],
@@ -130,8 +157,11 @@ const dataTwo = [
 ];
 
 // Using reduce flat dataTwo array
-console.log(dataTwo.flat(2));
 
+dataTwo.reduce((acc, cv) => {
+  acc = acc.concat(cv.flat(Infinity));
+  return acc;
+}, []);
 /*
 
 Create these functions which accepts a number value and returns a number value:
