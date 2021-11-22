@@ -14,8 +14,7 @@ const got = {
         },
         {
           name: "Benjen Stark",
-          description:
-            "Brother of Eddard Stark - First ranger of the Night's Watch",
+          description: "Brother of Eddard Stark - First ranger of the Night's Watch",
           image:
             "http://cheatsheetworld.com/img/entertainment/game-of-thrones/game-of-thrones-benjen-stark.jpg",
           wikiLink: "http://gameofthrones.wikia.com/wiki/Benjen_Stark",
@@ -36,8 +35,7 @@ const got = {
         },
         {
           name: "Arya Stark",
-          description:
-            "Daughter of Eddard and Catelyn Stark - Direwolf: Nymeria",
+          description: "Daughter of Eddard and Catelyn Stark - Direwolf: Nymeria",
           image:
             "http://cheatsheetworld.com/img/entertainment/game-of-thrones/game-of-thrones-arya-stark.jpg",
           wikiLink: "http://gameofthrones.wikia.com/wiki/Arya_Stark",
@@ -86,16 +84,14 @@ const got = {
         },
         {
           name: "Jaime Lannister",
-          description:
-            "The Kingslayer - Knight of the Kingsgaurd - Son of Tywin Lannister",
+          description: "The Kingslayer - Knight of the Kingsgaurd - Son of Tywin Lannister",
           image:
             "http://cheatsheetworld.com/img/entertainment/game-of-thrones/game-of-thrones-jaime-lannister.jpg",
           wikiLink: "http://gameofthrones.wikia.com/wiki/Jaime_Lannister",
         },
         {
           name: "Cersei Baratheon",
-          description:
-            "Married to King Robert Baratheon - Daughter of Tywin Lannister",
+          description: "Married to King Robert Baratheon - Daughter of Tywin Lannister",
           image:
             "http://cheatsheetworld.com/img/entertainment/game-of-thrones/game-of-thrones-cersei-lannister.jpg",
           wikiLink: "http://gameofthrones.wikia.com/wiki/Cersei_Lannister",
@@ -115,24 +111,21 @@ const got = {
         },
         {
           name: "Stannis Baratheon",
-          description:
-            "Lord of Dragonstone - Master of Ships - Brother of Robert Baratheon",
+          description: "Lord of Dragonstone - Master of Ships - Brother of Robert Baratheon",
           image:
             "http://cheatsheetworld.com/img/entertainment/game-of-thrones/game-of-thrones-stannis-baratheon.jpg",
           wikiLink: "http://gameofthrones.wikia.com/wiki/Stannis_Baratheon",
         },
         {
           name: "Renly Baratheon",
-          description:
-            "Lord of Storm's End - Master of Laws - Brother of Robert Baratheon",
+          description: "Lord of Storm's End - Master of Laws - Brother of Robert Baratheon",
           image:
             "http://cheatsheetworld.com/img/entertainment/game-of-thrones/game-of-thrones-renly-baratheon.jpg",
           wikiLink: "http://gameofthrones.wikia.com/wiki/Renly_Baratheon",
         },
         {
           name: "Joffrey Baratheon",
-          description:
-            "Heir to the Iron Throne - Son of Robert and Cersei Baratheon",
+          description: "Heir to the Iron Throne - Son of Robert and Cersei Baratheon",
           image:
             "http://cheatsheetworld.com/img/entertainment/game-of-thrones/game-of-thrones-joffrey-baratheon.jpg",
           wikiLink: "http://gameofthrones.wikia.com/wiki/Joffrey_Baratheon",
@@ -167,8 +160,7 @@ const got = {
         },
         {
           name: "Viserys Targaryen",
-          description:
-            'The Beggar King - Son of Aerys II Targaryen "The Mad King"',
+          description: 'The Beggar King - Son of Aerys II Targaryen "The Mad King"',
           image:
             "http://cheatsheetworld.com/img/entertainment/game-of-thrones/game-of-thrones-viserys-targaryen.jpg",
           wikiLink: "http://gameofthrones.wikia.com/wiki/Viserys_Targaryen",
@@ -188,8 +180,7 @@ const got = {
         },
         {
           name: "Theon Greyjoy",
-          description:
-            "Ward of the Starks - Heir to the Iron Islands - Son of Balon Greyjoy",
+          description: "Ward of the Starks - Heir to the Iron Islands - Son of Balon Greyjoy",
           image:
             "http://cheatsheetworld.com/img/entertainment/game-of-thrones/game-of-thrones-theon-greyjoy.jpg",
           wikiLink: "http://gameofthrones.wikia.com/wiki/Theon_Greyjoy",
@@ -252,8 +243,7 @@ const got = {
         },
         {
           name: "Brynden Tully",
-          description:
-            "Lord of Riverrun - Head of House Tully - Brother of Hoster Tully",
+          description: "Lord of Riverrun - Head of House Tully - Brother of Hoster Tully",
           image:
             "http://cheatsheetworld.com/img/entertainment/game-of-thrones/game-of-thrones-brynden-tully.jpg",
           wikiLink: "http://gameofthrones.wikia.com/wiki/Brynden_Tully",
